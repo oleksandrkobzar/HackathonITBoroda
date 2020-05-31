@@ -12,7 +12,9 @@ function Tascks() {
           "Some quick example text to he card's content.",
           "Some quick example text to he card's content.",
           "Some quick example text to he card's content."]
-    }
+    },
+    username: "@username",
+    date: "9:10 PM"
   }
 
   return (
@@ -50,8 +52,8 @@ const Task = props => {
         {props.data.text.tasks.map((elem, idx) => <div className="card-text" key={idx}><input type="checkbox" value="option1" aria-label="..." />{elem}</div>)}
       </div>
       <div className="card-footer d-flex justify-content-between">
-        <div>@username</div>
-        <div>6:10 PM</div>
+        <div>{props.data.username}</div>
+        <div>{props.data.date}</div>
       </div>
     </div>
   )
