@@ -4,19 +4,17 @@ import { connect } from 'react-redux'
 import UserPanel from './UserPanel'
 import Content from './Content'
 
-import { fetchPostsIfNeeded, fetchData, getTasks } from '../store/actions/index'
+import { fetchTasks } from '../store/actions/index'
 
 import './../styles/home.css'
 
-function Home({ tasks, fetchPostsIfNeeded, getTasks, fetchData }) {
-  
+function Home({ tasks, fetchTasks }) {
+
   useEffect(() => {
-    // const url = "https://postman-echo.com/get?foo1=bar1&foo2=bar2"
-    // const res = fetch(url)
-    // getTasks(res)
+
   })
-  // fetchData(url)
-  fetchPostsIfNeeded()
+  
+  fetchTasks('https://postman-echo.com/post')
 
   console.log(tasks)
   return (
@@ -40,9 +38,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  fetchPostsIfNeeded: payload => dispatch(fetchPostsIfNeeded(payload)),
-  fetchData: payload => dispatch(fetchData(payload)),
-  getTasks: payload => dispatch(getTasks(payload))
+  fetchTasks: payload => dispatch(fetchTasks(payload))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)
