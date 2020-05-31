@@ -1,0 +1,51 @@
+.content-left {
+  background: #354052;
+  color: #8994a6;
+  padding: 5px;
+}
+
+.user-panel {
+  padding: 10px;
+}
+
+.user-info {
+  padding: 20px;
+  color: #bfbfbf;
+}
+
+.user-logo {
+  min-width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+.team-list {
+  padding: 0 10px;
+}
+
+.team-list > ul {
+  padding: 0;
+}
+
+.team-list > ul > li {
+  list-style: none;
+  text-decoration: none;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.team-list > ul > li:hover {
+  color: #ffffff;
+  background: #5b5f71;
+  border-radius: 3px;
+}
+
+.team-item.active {
+  color: #ffffff;
+  background: #5b5f71;
+  border-radius: 3px;
+}
+
+  

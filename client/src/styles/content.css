@@ -1,0 +1,42 @@
+.team-name {
+  margin: 20px;
+}
+
+.commit {
+  margin: 10px 5px;
+  font-size: 14px;
+}
+
+.latest-commits {
+  max-height: 500px;
+}
+
+.plagin-list {
+  max-height: 200px;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  max-height: 80vh;
+}
+
+.task-item {
+  margin: 5px;
+  min-width: 200px;
+}
+
+.task-item input {
+  margin: 5px;
+}
+
+.task-group-icon i {
+  margin: 5px;
+}
